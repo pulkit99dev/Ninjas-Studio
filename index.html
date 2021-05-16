@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player by Pulkit</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <link rel='shortcut icon' type='image/x-icon' href='./albumArts/music-note.svg' />
+</head>
+<body>
+  <!-- holds the interface of bottom navbar -->
+  <section id="music-playing-now">
+    <div class="music-playing-now-items">
+      <div id="music-playing-now-details">
+        <div id="music-playing-now-details-photo"><a href="playing/songplaying.html">
+          <img src="albumArts/1 (113).jpg"></a>
+        </div>
+        <div id="music-playing-now-details-info">
+          <div id="music-playing-now-songname">
+            Yahi hoon main
+          </div>
+          <div id="music-playing-now-singername">
+            Ayushmann Khurana
+          </div>
+        </div>
+        <div id="music-playing-now-details-favourite">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div id="music-playing-now-details-nolike">
+          <i class="fas fa-microphone-slash"></i>
+        </div>
+      </div>
+    </div>
+    <div class="music-playing-now-items" style="width: 300px;">
+      <div id="music-playing-now-bar">
+        <div id="music-playing-now-bar-controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div style="font-size: 2.5rem"><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+        </div>
+        <div id="music-playing-now-bar-indicator">
+          <div>1:39</div>
+          <div id="music-playing-now-indicator-circle">
+              <div>
+                <div></div>
+              </div>
+          </div>
+          <div>2:34</div>
+     </div>
+   </div>
+ </div>
+ <div class="music-playing-now-items">
+  <div id="music-playing-now-more-control">
+   <div><i class="fas fa-sort-amount-down"></i></div>
+   <div><i class="fas fa-headphones"></i></div>
+   <div><i class="fas fa-volume-up"></i></div>
+   <div><i class="fas fa-angle-double-up"></i></div>
+   <div><i class="fas fa-angle-double-down"></i></div>
+   <div><a href="playing/songplaying.html"><i class="fas fa-expand"></i></a></div>
+ </div>
+</div>
+</section>
+
+<!-- header section navigation bar -->
+
+<header id="navigation">
+ <nav>
+
+<!-- navigation left part -->
+
+  <div class="nav-left">
+    <ul>
+     <li>
+      <div id="brand-logo"><a href="#">
+       <img id="brand-logo" class="header-image" src="./albumArts/music-note.svg"></a>
+       <span id="logo-name"> Ninjas<br>Studio </span> 
+     </div>
+   </li>
+   <li class="fav">Favourites</li>
+ </ul>
+</div>
+
+<!-- navigation right part -->
+
+<div class="nav-right">
+
+<!-- hamburger icon for hover -->
+
+  <div id="hamburger-icon"><i class="fas fa-bars"></i></div>
+
+  <ul>
+   <li id="header-input">
+    <i class="fas fa-search"></i>
+    <input type="text" name="search" placeholder="Search">
+    <i class="fas fa-microphone"></i>
+  </li>
+  <li style="position: relative;">
+    <i class="fas fa-bell"></i>
+    <p style="position: absolute;background-color: red;width: 5px;height: 5px;border-radius: 5px;top: -15px;right: 1px;"></p>
+  </li>
+  <li>
+    <img id="user-image" class="header-image" src="./assets/pulkit.jpg">
+  </li>
+</ul>
+</div>
+</nav>
+</header>
+
+<!-- main music section -->
+
+<main>
+ <section id="music">
+
+<!-- carousel showing trending music and animation on hover -->
+
+  <div id="music-trending" class="slider">
+   <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+   <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+   <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+   <div class="slider__inner">
+    <div class="slider__contents">
+      <img src="albumArts/1 (113).jpg">
+    </div>
+    <div class="slider__contents">
+      <img src="albumArts/1 (114).jpg">
+    </div>
+    <div class="slider__contents">
+      <img src="albumArts/1 (115).jpg">
+    </div>
+    <div class="slider__contents">
+      <img src="albumArts/1 (116).jpg">
+    </div>
+    <div class="slider__contents">
+      <img src="albumArts/1 (117).jpg">
+    </div>
+  </div>   			
+</div>
+<br>
+<br>
+<!-- latest music release section -->
+
+<div id="music-latest-release" class="music-common">
+ <div id="latest-release-header" class="content-header">
+  Latest Release       
+</div>
+<div id="latest-release-content">
+
+<!-- latest release items -->
+
+  <div class="latest-release-item">
+   <div>
+    <div class="latest-release-item-logo"><a href="#">
+      <img src="albumArts/1 (93).jpg"></a>
+    </div>
+    <div class="latest-release-item-details">
+      <h6>One-Republic</h6>
+      <div>
+        Aug&nbsp;11,2017
+      </div>
+    </div>
+    <div class="latest-release-item-dialog-choices">
+      <div>
+        <i class="fas fa-ellipsis-h"></i>
+       </div>
+       <div class="latest-release-item-dialog-choices-content">
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-play"></i></a></div></div>
+           <div>Play Now</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-plus"></i></a></div></div>
+           <div>Add To Queue</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-heart"></i></a></div></div>
+           <div>Add To Fav</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-info-circle"></i></a></div></div>
+           <div>Song Info</div>
+         </div>
+       </div>
+     <div>2:34</div>
+   </div>
+ </div>
+ <div>
+ </div>
+</div>
+
+<div class="latest-release-item">
+   <div>
+    <div class="latest-release-item-logo"><a href="#">
+      <img src="albumArts/latest_release/artwork.jpg"></a>
+    </div>
+    <div class="latest-release-item-details">
+      <h6>One-Republic</h6>
+      <div>
+        Aug&nbsp;11,2017
+      </div>
+    </div>
+    <div class="latest-release-item-dialog-choices">
+      <div>
+        <i class="fas fa-ellipsis-h"></i>
+       </div>
+       <div class="latest-release-item-dialog-choices-content">
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-play"></i></a></div></div>
+           <div>Play Now</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-plus"></i></a></div></div>
+           <div>Add To Queue</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-heart"></i></a></div></div>
+           <div>Add To Fav</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-info-circle"></i></a></div></div>
+           <div>Song Info</div>
+         </div>
+       </div>
+     <div>5:3</div>
+   </div>
+ </div>
+ <div>
+ </div>
+</div>
+
+<div class="latest-release-item">
+   <div>
+    <div class="latest-release-item-logo"><a href="#">
+      <img src="albumArts/latest_release/disturbed.jpg"></a>
+    </div>
+    <div class="latest-release-item-details">
+      <h6>Cold-Water</h6>
+      <div>
+        Aug&nbsp;11,2017
+      </div>
+    </div>
+    <div class="latest-release-item-dialog-choices">
+      <div>
+        <i class="fas fa-ellipsis-h"></i>
+       </div>
+       <div class="latest-release-item-dialog-choices-content">
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-play"></i></a></div></div>
+           <div>Play Now</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-plus"></i></a></div></div>
+           <div>Add To Queue</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-heart"></i></a></div></div>
+           <div>Add To Fav</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-info-circle"></i></a></div></div>
+           <div>Song Info</div>
+         </div>
+       </div>
+     <div>1:34</div>
+   </div>
+ </div>
+ <div>
+ </div>
+</div>
+
+<div class="latest-release-item">
+   <div>
+    <div class="latest-release-item-logo"><a href="#">
+      <img src="albumArts/latest_release/nativetongue.jpg"></a>
+    </div>
+    <div class="latest-release-item-details">
+      <h6>War</h6>
+      <div>
+        Aug&nbsp;11,2017
+      </div>
+    </div>
+    <div class="latest-release-item-dialog-choices">
+      <div>
+        <i class="fas fa-ellipsis-h"></i>
+       </div>
+       <div class="latest-release-item-dialog-choices-content">
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-play"></i></a></div></div>
+           <div>Play Now</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-plus"></i></a></div></div>
+           <div>Add To Queue</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-heart"></i></a></div></div>
+           <div>Add To Fav</div>
+         </div>
+         <div class="latest-release-item-dialog-choices-content-items">
+           <div><div><a href="#"><i class="fas fa-info-circle"></i></a></div></div>
+           <div>Song Info</div>
+         </div>
+       </div>
+     <div>3:54</div>
+   </div>
+ </div>
+ <div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+<!-- music popular artists section -->
+
+<div id="music-popular-artists" class="music-common">
+  <div id="music-popular-artists-header" class="content-header">Popular Artists</div>
+  <div id="music-popular-artists-contents">
+
+    <!-- music popular artists items -->
+
+    <div class="music-popular-artists-items">
+      <div class="artist-photo"><a href="playing/songplaying.html"><img src="albumArts/popular_artists/justin.jpg"></a></div>
+      <div class="artist-name">Justin Timberlake</div>
+    </div>
+    <div class="music-popular-artists-items">
+      <div class="artist-photo"><a href=""><img src="albumArts/popular_artists/ed.jpg"></a></div>
+      <div class="artist-name">Ed Sheeran</div>
+    </div>
+    <div class="music-popular-artists-items">
+      <div class="artist-photo"><a href=""><img src="albumArts/popular_artists/capital.jpg"></a></div>
+      <div class="artist-name">Shawn Mendes</div>
+    </div>
+    <div class="music-popular-artists-items">
+      <div class="artist-photo"><a href=""><img src="albumArts/popular_artists/lipa.jpg"></a></div>
+      <div class="artist-name">Billie Eilish</div>
+    </div>
+    <div class="music-popular-artists-items">
+      <div class="artist-photo"><a href=""><img src="albumArts/popular_artists/taylor.jpg"></a></div>
+      <div class="artist-name">Taylor Swift</div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<!-- music stations -->
+
+<div id="music-stations" class="music-common">
+  <div class="content-header">Music Stations</div>
+ <div id="music-display-contents">
+                     <div style="width: 150px;height: 100px;position: relative;background-color: pink;margin: 15px 15px;">
+                      <div style="width: 120px;height: 115px;top: -8px;padding: 0;position: absolute;background-color: rgb(111, 0, 255);margin: 0 10%;">
+                        <div id="music-display-contents-logo";>
+                          <a href="#">
+                            <img src="albumArts/pulkit.jpg">
+                          </a>
+                          <h3 id="music-display-contents-logo-title">Stations</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- music stations items -->
+                 <div class="music-display-contents-items">
+                  <a href="#">
+                   <img src="albumArts/stations/love.jpg">
+                 </a>  
+                 <h3>Melody</h3>
+               </div>
+               <div class="music-display-contents-items">
+                <a href="#">
+                 <img src="albumArts/stations/retro.jpg">
+               </a>  
+               <h3>90's</h3>
+             </div>
+             <div class="music-display-contents-items">
+              <a href="#">
+               <img src="albumArts/stations/chillsong.jpg">
+             </a>  
+             <h3>Chill</h3>
+           </div>
+           <div class="music-display-contents-items">
+            <a href="#">
+             <img src="albumArts/stations/rocksong.jpg">
+           </a>  
+           <h3>Rock</h3>
+         </div>
+         <div class="music-display-contents-items">
+          <a href="#">
+           <img src="albumArts/stations/popsong.jpg">
+         </a>  
+         <h3>Pop</h3>
+       </div>
+      
+   </div>
+ </div>
+
+
+<!-- music genre section -->
+
+
+<div id="music-genre" class="music-common">
+  <div class="music-genre-items">
+   <div class="slider__contents" style="padding: 0"><img src="albumArts/party.jpg"></div>
+   <h3>Party</h3>
+ </div>
+
+<!-- music genre items -->
+
+ <div class="music-genre-items">
+   <div class="slider__contents" style="padding: 0"><img src="albumArts/music_genre/electronic.jpg"></div>
+   <h3>Electronic</h3>
+ </div>
+ <div class="music-genre-items">
+   <div class="slider__contents" style="padding: 0"><img src="albumArts/music_genre/roadtrip.jpg"></div>
+   <h3>Road Trip</h3>
+ </div>
+</div>
+
+<!-- music english srection -->
+
+<div id="music-english" class="music-common">
+ <div id="music-english-title" class="content-header">
+  Latest English
+</div>
+<div id="latest-english-content">
+  <div class="latest-english-items">
+    <div class="latest-english-items-image"><a href="#"><img src="albumArts/latest_english/despacito.jpg"></a>
+    </div>
+    <div class="latest-english-items-name">
+     Despacito
+   </div>
+   <div>
+    May&nbsp;19,2019
+  </div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/latest_english/dua.jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   New-Rules 
+ </div>
+ <div>
+  Feb&nbsp;12,2017
+</div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/latest_english/shawn.jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   T-Y Better 
+ </div>
+ <div>
+  March&nbsp;08,2018
+</div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/1 (108).jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   Miyuki
+ </div>
+ <div>
+  Feb&nbsp;23,2012
+</div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/1 (64).jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   Big-Hero 6
+ </div>
+ <div>
+  Dec&nbsp;19,2015
+</div>
+</div>
+</div>
+</div>
+
+<!-- music hindi section -->
+
+<div id="music-hindi" class="music-common">
+ <div id="music-hindi-title" class="              content-header">
+  Latest Hindi
+</div>
+<div id="latest-hindi-content">
+  <div class="latest-english-items">
+    <div class="latest-english-items-image"><a href="#"><img src="albumArts/1 (38).jpg"></a>
+    </div>
+    <div class="latest-english-items-name">
+     Ae-dil
+   </div>
+   <div>
+    May&nbsp;19,2019
+  </div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/1 (39).jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   Hawayein
+ </div>
+ <div>
+  May&nbsp;19,2019
+</div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/1 (34).jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   Bas Mein 
+ </div>
+ <div>
+  May&nbsp;19,2019
+</div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/1 (113).jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   Yahi hu mai 
+ </div>
+ <div>
+  May&nbsp;19,2019
+</div>
+</div>
+<div class="latest-english-items">
+  <div class="latest-english-items-image"><a href="#"><img src="albumArts/latest_hindi/simbba.jpg"></a>
+  </div>
+  <div class="latest-english-items-name">
+   Simba
+ </div>
+ <div>
+  May&nbsp;19,2019
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- music side queue -->
+
+<aside id="music-queue">
+  <section id="music-queue-header">
+    <div id="music-queue-header-title">Queue</div>
+    <div id="music-queue-header-content">
+      <div>Queue</div>
+      <div id="music-queue-header-content-dilaog"><a href="#"><i class="fas fa-chevron-down"></i></a></div>
+      <div id="music-queue-header-content-dilaog-box">
+        <div>
+          <a href="#">Playlists</a>
+        </div>
+        <div>
+          <a href="#">Favourite songs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="music-queue-content">
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">01</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (1).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number" style="transform: rotate(-90deg);
+      color: #4e4ee6;"><i class="fas fa-align-left"></i></div>
+      <div class="music-queue-items-image"><a href="playing/songplaying.html"><img src="albumArts/1 (2).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">03</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (3).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">04</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (4).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">05</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (5).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">06</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (6).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">07</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (7).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">08</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/1 (8).jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">09</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/aside_bar/jamesbay.jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+    <div class="music-queue-items">
+      <div class="music-queue-items-number">10</div>
+      <div class="music-queue-items-image"><a href=""><img src="albumArts/aside_bar/samtusi.jpg"></a></div>
+      <div class="music-queue-items-details">
+        <div class="music-queue-items-details-name">Song</div>
+        <div class="music-queue-items-details-singer">Singer</div>
+      </div>
+      <div class="music-queue-items-love"><i class="far fa-heart"></i></div>
+    </div>
+  </section>
+</aside>
+</main>
+</body>
+</html>
